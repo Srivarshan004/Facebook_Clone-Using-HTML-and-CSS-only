@@ -217,7 +217,7 @@
                     <img src="images/car.jpg" alt="">
                 </div>
                 <div class="bottom">
-                    <div class="post_option">
+                    <div class="post_option" onclick="postLike1()" id="post_like1">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p>Like</p>
                     </div>
@@ -249,7 +249,7 @@
                     #Good Day..
                 </div>
                 <div class="bottom">
-                    <div class="post_option">
+                    <div class="post_option" onclick="postLike2()" id="post_like2">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p>Like</p>
                     </div>
@@ -355,6 +355,16 @@
         <!-- Body Right Side End -->
     </div>
     <!-- Main Body End -->
+
+    <script>
+        function postLike1(){
+            const likes = document.querySelector('#post_like1').style.color = "blue";
+        }
+        
+        function postLike2(){
+            const likes = document.querySelector('#post_like2').style.color = "blue";
+        }
+    </script>
 </body>
 
 </html>

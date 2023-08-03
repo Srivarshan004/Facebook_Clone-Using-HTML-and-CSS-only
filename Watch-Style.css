@@ -350,6 +350,9 @@ main .left_side{
     align-items: center;
     padding: 10px 0;
 }
+.statuses .bottom .post_option:active{
+    transform: scale(0.95);
+}
 .statuses .bottom .post_option{
     display: flex;
     justify-content: center;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +12,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="Groups-Style.css">
     <link rel="Website Icon" href="images/facebook-logo.png">
-    <title>Facebook</title>
+    <title>Groups | Facebook</title>
 </head>
-
 <body>
     <!-- Header Starts -->
     <header>
@@ -71,73 +69,168 @@
     </header>
     <!-- Header End -->
 
-    <!-- Main Body Starts -->
-    <div class="main_body">
-        <!-- Body Left Side Starts -->
-        <div class="left_sidebar">
-            
-            <div class="right_side">
-                <div class="head_option">
-                    <h2>Friends</h2>
-                    <div class="setting_icon"><span class="material-icons">settings</span></div>
+
+    <!-- Main Page Start -->
+    <main>
+        <!-- Left side Start -->
+        <div class="right_side">
+            <div class="head_option">
+                <h2>Groups</h2>
+                <div class="setting_icon"><span class="material-icons">settings</span></div>
+            </div>
+            <div class="serach_option">
+                <span class="material-icons">search</span>
+                <input type="search" placeholder="Search Videos">
+            </div>
+            <div class="groups_option">
+                <div class="group_option active">
+                    <span class="material-icons-outlined">feed</span>
+                    <h5>Your Feed</h5>
                 </div>
-                <div class="serach_option">
-                    <span class="material-icons">search</span>
-                    <input type="search" placeholder="Search Videos">
+                <div class="group_option">
+                    <i class="fa-regular fa-compass"></i>
+                    <h5>Discover</h5>
                 </div>
-                <div class="friends_option">
-                    <div class="friend_option active">
-                        <span class="material-icons">storefront</span>
-                        <h5>Browse All</h5>
-                    </div>
-                    <div class="friend_option">
-                        <i class="fa-solid fa-bell"></i>
-                        <h5>Notifications</h5>
-                    </div>
-                    <div class="friend_option">
-                        <span class="material-icons-outlined">move_to_inbox</span>
-                        <h5>Inbox</h5>
-                    </div>
-                    <div class="friend_option">
-                        <span class="material-icons-outlined">local_mall</span>
-                        <h5>Buying</h4>
-                        <span class="material-icons" id="keyboard_arrow_right">keyboard_arrow_right</span>
-                    </div>
-                    <div class="friend_option">
-                        <span class="material-icons-outlined">sell</span>
-                        <h5>Selling</h5>
-                        <span class="material-icons" id="keyboard_arrow_right">keyboard_arrow_right</span>
-                    </div>
+                <div class="group_option">
+                    <span class="material-icons-outlined">groups</span>
+                    <h5>Your Groups</h5>
                 </div>
-                <div class="new-list">
-                    <h4>+ Create new group</h4>
+            </div>
+            <div class="new-group">
+                <h4>+ Create new Group</h4>
+            </div>
+            <hr>
+            <div class="your_groups">
+                <h6>Groups you've joined</h6>
+                <p>See all</p>
+            </div>
+            <div class="groups">
+                <div class="group_detail">
+                    <img class="img_avatar" src="images/user-icon.png" alt="">
+                    <h4>Salem NEWS</h4>
                 </div>
-                <hr>
+                <div class="group_detail">
+                    <img class="img_avatar" src="images/user-icon.png" alt="">
+                    <h4>News 7</h4>
+                </div>
+                <div class="group_detail">
+                    <img class="img_avatar" src="images/user-icon.png" alt="">
+                    <h4>ICC</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Left side End -->
+
+        <!-- Right side Start -->
+        <div class="left_side">
+            <div class="head_option">
+                <h3>Recent Activity</h3>
+            </div>
+            <div class="groups_suggection">
+                <div class="suggection">
+                    <div class="suggection_header">
+                        <h4>Suggested for you</h4>
+                        <span class="material-icons-outlined">more_horiz</span>
+                    </div>
+                    <div class="suggection_body">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/card-img.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6>Amazing Videos On Planet</h6>
+                                <p>7.5M members</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="join_grp">Join group</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/card-img.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6>Amazing Videos On Planet</h6>
+                                <p>7.5M members</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="join_grp">Join group</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/card-img.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6>Amazing Videos On Planet</h6>
+                                <p>7.5M members</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="join_grp">Join group</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="suggection_footer">
+                        <h5>See more groups</h5>
+                    </div>
+
+                </div>
+
+                <div class="suggection">
+                    <div class="suggection_header">
+                        <h4>Friends' groups</h4>
+                        <span class="material-icons-outlined">more_horiz</span>
+                    </div>
+                    <div class="suggection_body">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/card-img.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6>Amazing Videos On Planet</h6>
+                                <p>7.5M members</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="join_grp">Join group</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/card-img.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6>Amazing Videos On Planet</h6>
+                                <p>7.5M members</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="join_grp">Join group</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/card-img.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h6>Amazing Videos On Planet</h6>
+                                <p>7.5M members</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="join_grp">Join group</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="suggection_footer">
+                        <h5>See more groups</h5>
+                    </div>
+
+                </div>
+                
+
             </div>
 
-
-
         </div>
-        <!-- Body Left Side End -->
-        <!-- Body Middle Starts -->
-        <div class="body_middle">
-            
-            <h1>Using Github</h1>
-
-        </div>
-        <!-- Body Middle End -->
-        <!-- Body Right Side Starts -->
-        <div class="right_sidebar">
-            
-
-
-
-
-        </div>
-
-        <!-- Body Right Side End -->
-    </div>
-    <!-- Main Body End -->
+        <!-- Right side End -->
+    </main>
+    <!-- Main Page End -->
 </body>
-
 </html>

@@ -134,7 +134,7 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/pjNI9K1D_xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="bottom">
-                    <div class="post_option">
+                    <div class="post_option" onclick="postLike1()" id="post_like1">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p>Like</p>
                     </div>
@@ -169,7 +169,7 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/FT3ODSg1GFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="bottom">
-                    <div class="post_option">
+                    <div class="post_option" onclick="postLike2()" id="post_like2">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p>Like</p>
                     </div>
@@ -204,7 +204,7 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_9KCpdAj_cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="bottom">
-                    <div class="post_option">
+                    <div class="post_option" onclick="postLike3()" id="post_like3">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p>Like</p>
                     </div>
@@ -239,7 +239,7 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/TX9qSaGXFyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
                 </div>
                 <div class="bottom">
-                    <div class="post_option">
+                    <div class="post_option" onclick="postLike4()" id="post_like4">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p>Like</p>
                     </div>
@@ -262,5 +262,24 @@
         <!-- Left side End -->
     </main>
     <!-- Main Page End -->
+
+    <script>
+        function postLike1(){
+            const likes = document.querySelector('#post_like1').style.color = "blue";
+        }
+        
+        function postLike2(){
+            const likes = document.querySelector('#post_like2').style.color = "blue";
+        } 
+
+        function postLike3(){
+            const likes = document.querySelector('#post_like3').style.color = "blue";
+        } 
+
+        function postLike4(){
+            const likes = document.querySelector('#post_like4').style.color = "blue";
+        }
+    </script>
 </body>
+
 </html>

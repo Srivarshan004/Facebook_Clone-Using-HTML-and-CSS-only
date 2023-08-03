@@ -107,7 +107,7 @@ header{
     border-radius: 0;
     background-color: transparent;
 }
-.header_option:hover .material-icons,
+.header_option:hover i,
 .header_option:hover i{
     color: #276bea;  
 }
@@ -188,31 +188,20 @@ header{
     width: 40px;
     margin: 0 10px;
 }
-/*---------main body------------*/
-.main_body{
+/*---------main-------------*/
+main{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-}
-/*---------main body left side------------*/
-.left_sidebar{
-    width: 100vw;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     justify-content: flex-start;
-    flex: 1;
-    position: sticky;
-    top: 70px;
-    padding: 20px 0px;
-    user-select: none;
+    align-items: start;
 }
-.main_body .left_sidebar .right_side{
+
+main .right_side{
     flex: 1;
     padding: 15px;
     background-color: white;
     height: 620px;
-    overflow: scroll;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     position: sticky;
     top: 75px;
@@ -240,6 +229,7 @@ header{
     width: 100%;
     position: relative;
     margin: 10px 0;
+    margin-bottom: 20px;
 }
 .right_side .serach_option input{
     width: 100%;
@@ -260,10 +250,10 @@ header{
     top: 9px;
     left: 15px;
 }
-.right_side .friends_option{
+.right_side .groups_option{
     margin-top: 10px;
 }
-.right_side .friends_option .friend_option{
+.right_side .groups_option .group_option{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -273,19 +263,19 @@ header{
     border-radius: 10px;
     position: relative;
 }
-.right_side .friends_option .friend_option.active{
+.right_side .groups_option .group_option.active{
     background-color: #eef0f2;
 }
-.right_side .friends_option .friend_option.active span{
+.right_side .groups_option .group_option.active span{
     color: white;
     background-color: #276bea;
 }
-.right_side .friends_option .friend_option:hover{
+.right_side .groups_option .group_option:hover{
     background-color: #eef0f2;
     cursor: pointer;
 }
-.right_side .friends_option .friend_option span,
-.right_side .friends_option .friend_option i{
+.right_side .groups_option .group_option span,
+.right_side .groups_option .group_option i{
     height: 30px;
     width: 30px;
     background-color: #cbced1;
@@ -302,79 +292,175 @@ header{
     font-size: 25px;
     margin-right: 10px;
 }
-.right_side .friends_option .friend_option:hover #keyboard_arrow_right{
+.right_side .groups_option .group_option:hover #keyboard_arrow_right{
     background-color: #eef0f2;
 }
-.right_side .new-list{
+.right_side .new-group{
     text-align: center;
     background-color: #d4f1fb;
     padding: 7px 0;
     color: #178fbb;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
-.right_side .new-list h4{
+.right_side .new-group h4{
     font-weight: 400;
 }
-
-
-/*----------main body right side----------*/
-
-.right_sidebar{
-    width: 100vw;
-    height: 620px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+.right_side .your_groups{
+    margin: 5px 0;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: flex-start;
-    flex: 1;
-    position: sticky;
-    top: 70px;
-    user-select: none;
+    justify-content: space-between;
+    align-items: center;
 }
+.right_side .your_groups h6{
+    margin: 8px 0;
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.right_side .your_groups p{
+    width: 70px;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: #178fbb;
+}
+.right_side .your_groups p:hover{
+    background-color: #f1f1f5;
+    cursor: pointer;
+}
+.contcts{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+.groups .contact_head{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    color: rgb(70, 70, 70);
+}
+.groups .contact_head .contact_options{
+    margin: 0 0px;
+}
+.groups .contact_head .contact_options span{
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 2px;
+}
+.groups .contact_head .contact_options span:hover{
+    background-color: #c9ced2;
+    cursor: pointer;
+}
+.groups .group_detail .img_avatar{
+    height: 35px;
+    width: 35px;
+}
+.groups .group_detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5px;
+    position: relative;
+}
+.groups .group_detail h4{
+    margin-left: 7px;
+    text-align:end;
+    color: rgb(74, 74, 74);
+}
+.groups .group_detail:hover{
+    background-color: #c9ced2;
+    cursor: pointer;
+    border-radius: 10px;
+}
+main .left_side{
+    flex: 3;
+    height: 100%;
+    width: 100vw;
+    
+}
+.left_side .head_option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+    margin-top: 25px;
+}
+.left_side .head_option h3{
+    margin-left: 40px;
+    color: rgb(75, 75, 75);
+}
+.left_side .groups_suggection{
+    display: grid;
+    place-items: center;
+    margin: 30px;
+    gap: 20px;
+}
+.groups_suggection .suggection{
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
 
+}
+.suggection .suggection_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    color: #363636;
+}
+.suggection_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.suggection_body .card{
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px;
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.suggection_body .card .card-img  img{
+    width: 100%;
+    height: 180px;
+}
+.suggection_body .card .card-body{
+    margin: 10px 0;
+    padding-left: 5px;
 
-
-
-
-
-@media (max-width:768px) {
-    .left_sidebar{
-        display: none;
-    }
-    .right_sidebar{
-        display: none;
-    }
-    header .header_left .header_input{
-        display: none;
-    }
-    header .header_center{
-        display: none;
-    }
-    .main_body{
-        margin-top: 20px;
-        width: 100vw;
-        padding: 0;
-    }
-    .body_middle .status_updater_option .updater_row_2 .updater_col{
-        padding:  5px;
-        margin: 5px;
-    }
-    .body_middle .status_updater_option .updater_row_1 input{
-        width: 360px;
-    }
-    .body_middle .status_box .status_row .status_option{
-        margin: 0px;
-    }
-    .body_middle .status_box .status_bar .status_col:last-child{
-        display: none;
-    }
-    header {
-        justify-content: space-evenly;
-    }
-
-
+}
+.suggection_body .card .card-body h6{
+    font-size: 13px;
+}
+.suggection_body .card .card-body p{
+    font-size: 14px;
+}
+.suggection_body .card .card-footer{
+    display: grid;
+    place-items: center;
+}
+.suggection_body .card .card-footer button{
+    display: block;
+    margin-top: 15px;
+    width: 90%;
+    padding: 5px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #276bea;
+    color: white;
+    font-weight: 700;
+}
+.suggection .suggection_footer{
+    width: 100%;
+    text-align: center;
+    color: #0e7195;
 }

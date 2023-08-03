@@ -499,6 +499,10 @@ header{
     padding: 5px 30px;
     color: rgb(54, 54, 54);
 }
+.statuses .bottom .post_option:active{
+    transform: scale(0.95);
+}
+
 .statuses .bottom .post_option:hover{
     cursor: pointer;
     border-radius: 10px;
@@ -507,10 +511,6 @@ header{
 .statuses .bottom .post_option i{
     padding: 0 10px;
 }
-/* .statuses .bottom .post_option i:visited{
-    color: #276bea;
-} */
-
 
 /*----------main body right side----------*/
 
@@ -582,26 +582,8 @@ header{
     justify-content: flex-start;
     align-items: start;
 }
-.contacts .contact_head{
-    width: 330px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    color: rgb(70, 70, 70);
-}
-.contacts .contact_head .contact_options{
-    margin: 0 0px;
-}
-.contacts .contact_head .contact_options span{
-    border-radius: 50%;
-    padding: 5px;
-    margin: 0 2px;
-}
-.contacts .contact_head .contact_options span:hover{
-    background-color: #c9ced2;
-    cursor: pointer;
-}
+
+
 .contacts .contact_detail .img_avatar{
     height: 35px;
     width: 35px;
